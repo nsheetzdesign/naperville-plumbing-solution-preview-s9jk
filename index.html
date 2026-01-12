@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naperville Plumbing Solution - Your Trusted Local Business Partner</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Sticky Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white text-lg">🔧</span>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-800">Naperville Plumbing Solution</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <button class="md:hidden text-gray-600" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav id="mobile-menu" class="md:hidden mt-4 pb-4 hidden">
+                <a href="#services" class="block py-2 text-gray-600 hover:text-primary">Services</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-primary">About</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">Your Trusted Local Business Partner</h2>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">Professional plumbing solutions for the Naperville community. We're here to serve our neighbors with reliable, quality service.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">Get In Touch</a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Professional Plumbing Services</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide comprehensive plumbing solutions for residential and commercial properties in Naperville and surrounding areas.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🚰</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Faucet & Fixture Repair</h4>
+                    <p class="text-gray-600">Expert repair and installation of faucets, sinks, and bathroom fixtures.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🚽</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Toilet Services</h4>
+                    <p class="text-gray-600">Toilet installation, repair, and maintenance for optimal performance.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🔧</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Pipe Repair</h4>
+                    <p class="text-gray-600">Professional pipe repair and replacement services for all plumbing systems.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🚿</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Shower & Bath Services</h4>
+                    <p class="text-gray-600">Complete shower and bathtub installation and repair services.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">⚡</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Emergency Services</h4>
+                    <p class="text-gray-600">24/7 emergency plumbing services for urgent repairs and issues.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-white">🏠</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Residential Plumbing</h4>
+                    <p class="text-gray-600">Complete residential plumbing solutions for homes and apartments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Naperville Plumbing Solution</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="w-full h-64 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-6xl text-white">🏢</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Serving the Naperville Community</h4>
+                        <p class="text-gray-600 mb-6">As a local business, we understand the unique needs of our Naperville neighbors. We're committed to providing reliable, professional plumbing services with a personal touch that only a community-focused business can offer.</p>
+                        <p class="text-gray-600 mb-6">Located at 140 Ambassador Dr #150, we're conveniently positioned to serve Naperville and the surrounding areas. Our goal is to build lasting relationships with our customers through quality workmanship and exceptional service.</p>
+                        <div class="flex items-center space-x-2 text-primary">
+                            <span class="text-xl">📍</span>
+                            <span class="font-semibold">140 Ambassador Dr #150, Naperville, IL 60540</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h3>
+                    <p class="text-lg text-gray-600">Ready to work with your local plumbing professionals? Contact us today for all your plumbing needs.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                                    <span class="text-white">📞</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Phone</p>
+                                    <p class="text-gray-600">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
+                                    <span class="text-white">✉️</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Email</p>
+                                    <p class="text-gray-600">info@napervilleplumbing.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                                    <span class="text-white">📍</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Address</p>
+                                    <p class="text-gray-600">140 Ambassador Dr #150<br>Naperville, IL 60540, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-6 text-gray-800">Send Us a Message</h4>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="your.email@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary" placeholder="Tell us about your plumbing needs..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white text-lg">🔧</span>
+                        </div>
+                        <h5 class="text-xl font-bold">Naperville Plumbing Solution</h5>
+                    </div>
+                    <p class="text-gray-400">Your Trusted Local Business Partner</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-1">© 2026 Naperville Plumbing Solution</p>
+                    <p class="text-xs text-gray-500">Preview site by Nick Sheetz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
